@@ -31,7 +31,7 @@
         "kind": 2,
         "importPath": "denis",
         "description": "denis",
-        "peekOfCode": "def igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:\n            print(random_time)\n            random_time -= 1",
+        "peekOfCode": "def igra():\n    #сука глобалы в кс хули\n    global stop_games\n    global random_time\n    global x    \n    #Создание рандом таймера + деление на 2 что бы когда прошла половина таймер исчез\n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        #Таймер тут есть",
         "detail": "denis",
         "documentation": {}
     },
@@ -40,7 +40,7 @@
         "kind": 2,
         "importPath": "denis",
         "description": "denis",
-        "peekOfCode": "def stop_game():\n    global stop_games\n    global x\n    time.sleep(x)\n    while random_time > 0:\n        user_input = input('Напишите stop: ')\n        if user_input.lower() == \"stop\":\n            stop_games = True\n        else:\n            print(\"Веденна не правильная команда попробуйте снова\")",
+        "peekOfCode": "def stop_game():\n    global stop_games\n    global x\n    #Функция ждёт когда пройдёт половина таймера\n    time.sleep(x)\n    while random_time > 0:\n        user_input = input('Напишите stop: ')\n        if user_input.lower() == \"stop\":\n            stop_games = True\n        #А это если ты еблан и написал не stop а ыещз",
         "detail": "denis",
         "documentation": {}
     },
@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "denis",
         "description": "denis",
-        "peekOfCode": "stop_games = False\nx = 0\ndef igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:",
+        "peekOfCode": "stop_games = False\nx = 0\n#The function itself with the game\n#Хотя нахуй идите если вы пендосы переведёте если что. Сама функция с игрой\ndef igra():\n    #сука глобалы в кс хули\n    global stop_games\n    global random_time\n    global x    \n    #Создание рандом таймера + деление на 2 что бы когда прошла половина таймер исчез",
         "detail": "denis",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "denis",
         "description": "denis",
-        "peekOfCode": "x = 0\ndef igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:\n            print(random_time)",
+        "peekOfCode": "x = 0\n#The function itself with the game\n#Хотя нахуй идите если вы пендосы переведёте если что. Сама функция с игрой\ndef igra():\n    #сука глобалы в кс хули\n    global stop_games\n    global random_time\n    global x    \n    #Создание рандом таймера + деление на 2 что бы когда прошла половина таймер исчез\n    random_time = random.randint(8,30)",
         "detail": "denis",
         "documentation": {}
     }
