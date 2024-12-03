@@ -1,0 +1,65 @@
+[
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "igra",
+        "kind": 2,
+        "importPath": "denis",
+        "description": "denis",
+        "peekOfCode": "def igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:\n            print(random_time)\n            random_time -= 1",
+        "detail": "denis",
+        "documentation": {}
+    },
+    {
+        "label": "stop_game",
+        "kind": 2,
+        "importPath": "denis",
+        "description": "denis",
+        "peekOfCode": "def stop_game():\n    global stop_games\n    global x\n    time.sleep(x)\n    while random_time > 0:\n        user_input = input('Напишите stop: ')\n        if user_input.lower() == \"stop\":\n            stop_games = True\n        else:\n            print(\"Веденна не правильная команда попробуйте снова\")",
+        "detail": "denis",
+        "documentation": {}
+    },
+    {
+        "label": "stop_games",
+        "kind": 5,
+        "importPath": "denis",
+        "description": "denis",
+        "peekOfCode": "stop_games = False\nx = 0\ndef igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:",
+        "detail": "denis",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "denis",
+        "description": "denis",
+        "peekOfCode": "x = 0\ndef igra():\n    global stop_games\n    global random_time\n    global x    \n    random_time = random.randint(8,30)\n    x = random_time / 2\n    while random_time != -1:\n        if random_time > x:\n            print(random_time)",
+        "detail": "denis",
+        "documentation": {}
+    }
+]
